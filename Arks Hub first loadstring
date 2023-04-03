@@ -6,7 +6,7 @@ _G.Types = {
 
 --variables                 
     local Tracer = Instance.new("Part", game.Workspace)
-Tracer.Name = "gay"
+Tracer.Name = "tracer"
 Tracer.Shape = _G.Types.Ball
 Tracer.Material = "ForceField"
 Tracer.Size = Vector3.new(5,5,5)
@@ -30,7 +30,7 @@ TracerColor = Color3.new(0, 255, 238),
 TracerTransparency = 0.75,
 TracerThickness = 5,
 Circles = false,
-CircleFOV = 500,
+CircleFOV = 550,
 CircleColor = Color3.new(255, 255, 255),
 CircleThickness = 2,
 CircleFilled = true,
@@ -43,9 +43,9 @@ TextSize = 35,
 TextInput = "Ark sluzze",
 Hitbox = true,
 NoBulletDelay = true,
-Autoclicker = true,
+Autoclicker = false,
 AutoclickerTime = 0.01,
-AutoclickerKey = "nul",
+AutoclickerKey = "p",
 AnimationPack = true
 
 }
@@ -595,7 +595,7 @@ local AnimationPack = game:GetService("CoreGui").Animation.AnimationPack
 local ScrollingFrame = AnimationPack.ScrollingFrame
 local CloseButton = AnimationPack.CloseButton
 
-AnimationPack.Visible = true
+AnimationPack.Visible = false
 
 local Lean = game:GetService("Players").LocalPlayer.Character.Humanoid:LoadAnimation(LeanAnimation)
 
